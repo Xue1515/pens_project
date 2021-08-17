@@ -1,38 +1,48 @@
 class PensController < ApplicationController
 
-  def index
+   def index
     @pens = Pen.all
-  end
-
-  def show
-    @pens = Pen.new
-    @pens = Pen.find(param [:id])
-  end 
-
-  def create
-   @pens = Pen.all
-   @pens = Pen.new(pen_params)
-   if @pen.save
-    redirect_to pen_path(@pen)
-   else
-    render :new
    end
-#end
 
-  def edit
-    @pens.
-  end 
-
-  def update
-    if pen.update (pen_params)
-      redirect_to pen_path(@pen)
+   def show
+    @pen = Pen.find(params[:id])
    end 
 
-  def destroy
-    if @pens.destroy
-      redirect_to index
-  end
+   def new
+    @pen = Pen.new
+   end
 
+   def create
+    @pen = Pen.new(pen_params)
+    @pen.user = current_user
+      if @pen.save
+     redirect_to pen_path(@pen)
+      else
+      render :new
+      end
+   end
+
+ 
+   def edit
+    @pen = Pen.find(params[:id])
+   end 
+
+   def update
+    @pen = Pen.find(params[:id])
+    if @pen.update(pen_params)
+      redirect_to pen_path(@pen)
+    end
+   end 
+
+   def destroy
+    if @pen.destroy
+      redirect_to pens_path
+    end
+   end  
+
+  private 
+
+   def pen_params
+    params.require(:pen).permit(:title, :description)
+   end
 end
-
-private 
