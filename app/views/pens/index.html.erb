@@ -1,2 +1,15 @@
-<h1> HI </h1>
-
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+      <h1>All our lovely pens </h1>
+      <ul class="list-group">
+        <% @pens.each do |it { should validate_presence_of(:attribute) }| %>
+          <li class="list-group-item">
+            <%= link_to pen.name, pen_path(pen) %>
+          </li>
+        <% end %>
+      </ul>
+      <%= link_to "Add a new pen", new_pen_path, class: 'btn btn-primary' %>
+    </div>
+  </div>
+</div>
