@@ -3,7 +3,7 @@
     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
       <h1>All our lovely pens </h1>
       <ul class="list-group">
-        <% @pens.each do |it { should validate_presence_of(:attribute) }| %>
+        <% @pens.each do |pen| %>
           <li class="list-group-item">
             <%= link_to pen.name, pen_path(pen) %>
           </li>
