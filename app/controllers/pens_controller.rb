@@ -15,7 +15,7 @@ class PensController < ApplicationController
    def create
     @pen = Pen.new(pen_params)
     @pen.user = current_user
-      if @pen.save
+      if @pen.save!
      redirect_to pen_path(@pen)
       else
       render :new
@@ -35,6 +35,7 @@ class PensController < ApplicationController
    end
 
    def destroy
+    @pen = Pen.find(params[:id])
     if @pen.destroy
       redirect_to pens_path
     end
