@@ -13,20 +13,36 @@ Pen.destroy_all
 
 file = URI.open('https://avatars.githubusercontent.com/u/85875844?v=4')
 user = User.new(email: 'sue@sue.com', password: "123456")
-user.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-
-file = URI.open('https://avatars.githubusercontent.com/u/68551131?v=4')
-user = User.new(email: 'pablo@pablo.com', password: "123456")
-user.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-
-file = URI.open('https://avatars.githubusercontent.com/u/4697576?v=4')
-user = User.new(email: 'and@and.com', password: "123456")
-user.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+user.photo.attach(io: file, filename: 'sue', content_type: 'image/png')
 
 user.save!
 
-file = URI.open('https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=966&q=80')
+file = URI.open('https://res.cloudinary.com/dbflo5abx/image/upload/v1629282065/pen01_f6922x.jpg')
 pen = Pen.new(title: 'Fountain pen', description: "A great fountain pen and a noteboook", user_id: user.id)
-pen.photo.attach(io: file, filename: 'nes.png', content_type: 'image/jpg')
+pen.photo.attach(io: file, filename: 'pen01', content_type: 'image/jpg')
+
+pen.save!
+
+file = URI.open('https://res.cloudinary.com/dbflo5abx/image/upload/v1629282066/pen03_o9plms.jpg')
+pen = Pen.new(title: 'Fountain pen', description: "A great fountain pen and a noteboook", user_id: user.id)
+pen.photo.attach(io: file, filename: 'pen02', content_type: 'image/jpg')
+
+pen.save!
+
+file = URI.open('https://res.cloudinary.com/dbflo5abx/image/upload/v1629282065/pen02_og66bi.jpg')
+pen = Pen.new(title: 'Fountain pen', description: "A great fountain pen and a noteboook", user_id: user.id)
+pen.photo.attach(io: file, filename: 'pen01', content_type: 'image/jpg')
+
+pen.save!
+
+file = URI.open('https://res.cloudinary.com/dbflo5abx/image/upload/v1629282065/pen04_dds87j.jpg')
+pen = Pen.new(title: 'Fountain pen', description: "A great fountain pen and a noteboook", user_id: user.id)
+pen.photo.attach(io: file, filename: 'pen01', content_type: 'image/jpg')
+
+pen.save!
+
+file = URI.open('https://res.cloudinary.com/dbflo5abx/image/upload/v1629282065/pen05_knf8sq.jpg')
+pen = Pen.new(title: 'Fountain pen', description: "A great fountain pen and a noteboook", user_id: user.id)
+pen.photo.attach(io: file, filename: 'pen01', content_type: 'image/jpg')
 
 pen.save!

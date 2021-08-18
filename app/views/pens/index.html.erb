@@ -5,6 +5,7 @@
       <ul class="list-group">
         <% @pens.each do |pen| %>
           <li class="list-group-item">
+            <%= cl_image_tag pen.photo.key, height: 150, width: 250, crop: :fill %>
             <%= link_to pen.title, pen_path(pen) %>
           </li>
         <% end %>
