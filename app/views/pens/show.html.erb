@@ -1,3 +1,9 @@
 <h1><%= @pen.title %></h1>
+<h2><%= @pen.description %></h2>
 
-<%= cl_image_tag pen.photo.key, height: 150, width: 250, crop: :fill %>
+<% if @pen.photo.attached? %>
+  <%= cl_image_tag @pen.photo.key, height: 150, width: 250, crop: :fill %>
+<% end %> 
+
+<%= link_to "delete pen", pen_path(@pen), method: :delete, class: 'btn btn-primary' %>
+ <%= link_to "Go back to home", root_path, class: 'btn btn-primary' %>
