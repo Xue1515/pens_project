@@ -8,7 +8,7 @@
 
 require "open-uri"
 
-User.destroy_all
+# User.destroy_all
 Pen.destroy_all
 
 file = URI.open('https://avatars.githubusercontent.com/u/85875844?v=4')
