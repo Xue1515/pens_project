@@ -8,7 +8,7 @@
 
 require "open-uri"
 
-# User.destroy_all
+User.destroy_all
 Pen.destroy_all
 
 file = URI.open('https://avatars.githubusercontent.com/u/85875844?v=4')
@@ -21,17 +21,25 @@ file = URI.open('https://res.cloudinary.com/dbflo5abx/image/upload/v1629282065/p
 pen = Pen.new(title: 'Fountain pen', description: "A great fountain pen and a noteboook", user_id: user.id)
 pen.photo.attach(io: file, filename: 'pen01', content_type: 'image/jpg')
 
+pen.save!
+
 file = URI.open('https://res.cloudinary.com/dbflo5abx/image/upload/v1629282066/pen03_o9plms.jpg')
 pen = Pen.new(title: 'Fountain pen', description: "A great fountain pen and a noteboook", user_id: user.id)
 pen.photo.attach(io: file, filename: 'pen02', content_type: 'image/jpg')
+
+pen.save!
 
 file = URI.open('https://res.cloudinary.com/dbflo5abx/image/upload/v1629282065/pen02_og66bi.jpg')
 pen = Pen.new(title: 'Fountain pen', description: "A great fountain pen and a noteboook", user_id: user.id)
 pen.photo.attach(io: file, filename: 'pen01', content_type: 'image/jpg')
 
+pen.save!
+
 file = URI.open('https://res.cloudinary.com/dbflo5abx/image/upload/v1629282065/pen04_dds87j.jpg')
 pen = Pen.new(title: 'Fountain pen', description: "A great fountain pen and a noteboook", user_id: user.id)
 pen.photo.attach(io: file, filename: 'pen01', content_type: 'image/jpg')
+
+pen.save!
 
 file = URI.open('https://res.cloudinary.com/dbflo5abx/image/upload/v1629282065/pen05_knf8sq.jpg')
 pen = Pen.new(title: 'Fountain pen', description: "A great fountain pen and a noteboook", user_id: user.id)
