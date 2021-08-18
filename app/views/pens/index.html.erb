@@ -5,7 +5,7 @@
       <ul class="list-group">
         <% @pens.each do |pen| %>
           <li class="list-group-item">
-            <%= link_to pen.name, pen_path(pen) %>
+            <%= link_to pen.title, pen_path(pen) %>
           </li>
         <% end %>
       </ul>
