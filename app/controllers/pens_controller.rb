@@ -6,7 +6,7 @@ class PensController < ApplicationController
 
    def show
     @pen = Pen.find(params[:id])
-   end 
+   end
 
    def new
     @pen = Pen.new
@@ -22,25 +22,26 @@ class PensController < ApplicationController
       end
    end
 
- 
+
    def edit
     @pen = Pen.find(params[:id])
-   end 
+   end
 
    def update
     @pen = Pen.find(params[:id])
     if @pen.update(pen_params)
       redirect_to pen_path(@pen)
     end
-   end 
+   end
 
    def destroy
+    @pen = Pen.find(params[:id])
     if @pen.destroy
       redirect_to pens_path
     end
-   end  
+   end
 
-  private 
+  private
 
    def pen_params
     params.require(:pen).permit(:title, :description)
