@@ -1,19 +1,25 @@
-<div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-      <h1>All our lovely pens </h1>
-      <ul class="list-group">
-        <% @pens.each do |pen| %>
-          <li class="list-group-item">
-            <% if pen.photo.attached? %>
-              <%= cl_image_tag pen.photo.key, height: 150, width: 250, crop: :fill %>
-            <% end %>
-            <%= link_to pen.title, pen_path(pen) %>
-            <%= link_to "delete pen", pen_path(pen), method: :delete, class: 'btn btn-primary' %>
-          </li>
-        <% end %>
-      </ul>
-      <%= link_to "Add a new pen", new_pen_path, class: 'btn btn-primary' %>
+    <div class="page-header">
+      <h1>All our lovely pens</h1>
     </div>
+    <div class="section-main">
+      <div class="pen-cards">
+        <% @pens.each do |pen| %>
+          <div class="pen-single-card">
+            <% if pen.photo.attached? %>
+              <%= cl_image_tag pen.photo.key, height: 150, crop: :fill, class: "w-100" %>
+          </div>
+          <div class="pen-card-title">
+            <%= link_to pen.title, pen_path(pen) %>
+          </div>
+        <% end %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+    <div class="btn-add-new">
+      <%= link_to "Add a new pen", new_pen_path, class: 'btn-add-new' %>
+    </div>
+  </div>
   </div>
 </div>

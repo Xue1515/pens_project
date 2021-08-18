@@ -1,2 +1,65 @@
 // Import page-specific CSS files here.
 @import "home";
+
+
+.page-header {
+  margin: 0 auto;
+  padding: 50px;
+  width: 100%;
+  height: 60vh;
+  margin-bottom: 45px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  background-image: url(https://res.cloudinary.com/dbflo5abx/image/upload/v1629299299/darius-bashar-NcNkCpMlYDk-unsplash_ybco1e.jpg);
+}
+
+.page-header > h1 {
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.section-main {
+  padding: 40px;
+}
+
+.pen-cards {
+  display: grid;
+}
+
+.pen-single-card {
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+}
+
+.pen-card-title a {
+    color: #343a40;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 15px 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.btn-add-new {
+    display: inline-block;
+    font-weight: 400;
+    color: #0E0000;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 2px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
