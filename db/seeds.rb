@@ -8,8 +8,9 @@
 
 require "open-uri"
 
-User.destroy_all
 Pen.destroy_all
+User.destroy_all
+
 
 file = URI.open('https://avatars.githubusercontent.com/u/85875844?v=4')
 user = User.new(email: 'sue@sue.com', password: "123456")
