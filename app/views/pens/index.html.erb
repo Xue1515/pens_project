@@ -2,16 +2,6 @@
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
       <h1>All our lovely pens </h1>
-
-<!-- app/views/articles/index.html.erb -->
-<%= cl_image_tag("m5aozgfzz0ya6hi9el6e",
-      width: 400, height: 300, crop: :fill) %>
-
-<!-- for face detection -->
-<%= cl_image_tag("mopxstmvttxbwiixslko",
-      width: 150, height: 150, crop: :thumb, gravity: :face) %>
-
-
       <ul class="list-group">
         <% @pens.each do |pen| %>
           <li class="list-group-item">
