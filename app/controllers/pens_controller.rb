@@ -6,6 +6,7 @@ class PensController < ApplicationController
 
    def show
     @pen = Pen.find(params[:id])
+    @booking = Booking.new
    end
 
    def new

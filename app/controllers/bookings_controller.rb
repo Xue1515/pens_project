@@ -1,7 +1,7 @@
 class BookingsController < ApplicationController
-  
+
   def index
-  @bookings = Booking.all
+    @bookings = Booking.all
   end
 
    def show
@@ -19,7 +19,7 @@ class BookingsController < ApplicationController
     @pen = Pen.find(params[:pen_id])
     @booking.pen = @pen
       if @booking.save!
-        redirect_to booking_path(@booking)
+        redirect_to new_pen_booking_path(booking_params)
       else
       render :new
       end
