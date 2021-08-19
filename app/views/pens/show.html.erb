@@ -5,7 +5,7 @@
 <div class="container">
   <div class="card-product">
   <% if @pen.photo.attached? %>
-  <%= cl_image_tag @pen.photo.key, height: 150, width: 250, crop: :fill %>
+    <%= cl_image_tag @pen.photo.key, height: 150, width: 250, crop: :fill %>
   <% end %>
     <div class="card-product-infos">
       <h1><%= @pen.title %></h1>
@@ -14,15 +14,15 @@
       <h6><%= @pen.price %>$</h6>
       <%= link_to "delete pen", pen_path(@pen), method: :delete, class: 'btn btn-secondary boton-delete'%>
     </div>
-  <div>
+  </div>
+</div>
 
-  <div class="form-wrapper" style="width: 400px; margin: 0 auto;">
+<div class="container form" style="margin: 0 auto;">
     <h2>Booking a Pen</h2>
 
-    <%= simple_form_for :search, method: "get" do |f| %>
-      <%= f.input :starts_at, as: :string, required: false, input_html: {class: "datepicker"} %>
-      <%= f.input :ends_at, as: :string, required: false, input_html: {class: "datepicker"} %>
-      <%= f.button :submit, "Go", class: "btn btn-primary" %>
-    <% end %>
-  </div>
+  <%= simple_form_for :search, method: "get" do |f| %>
+    <%= f.input :starts_at, as: :string, required: false, input_html: {class: "datepicker"} %>
+    <%= f.input :ends_at, as: :string, required: false, input_html: {class: "datepicker"} %>
+    <%= f.button :submit, "Go", class: "btn btn-secondary" %>
+  <% end %>
 </div>
