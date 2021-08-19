@@ -19,31 +19,31 @@ user.photo.attach(io: file, filename: 'sue', content_type: 'image/png')
 user.save!
 
 file = URI.open('https://res.cloudinary.com/dbflo5abx/image/upload/v1629282065/pen01_f6922x.jpg')
-pen = Pen.new(title: 'Fountain pen', description: "A great fountain pen and a noteboook", user_id: user.id)
+pen = Pen.new(title: 'Fountain pen', description: "A great fountain pen and a noteboook", user_id: user.id, price: 10, category: "blue-pen")
 pen.photo.attach(io: file, filename: 'pen01', content_type: 'image/jpg')
 
 pen.save!
 
 file = URI.open('https://res.cloudinary.com/dbflo5abx/image/upload/v1629282066/pen03_o9plms.jpg')
-pen = Pen.new(title: 'Fountain pen', description: "A great fountain pen and a noteboook", user_id: user.id)
+pen = Pen.new(title: 'Fountain pen', description: "A great fountain pen and a noteboook", user_id: user.id, price: 10, category: "blue-pen")
 pen.photo.attach(io: file, filename: 'pen02', content_type: 'image/jpg')
 
 pen.save!
 
 file = URI.open('https://res.cloudinary.com/dbflo5abx/image/upload/v1629282065/pen02_og66bi.jpg')
-pen = Pen.new(title: 'Fountain pen', description: "A great fountain pen and a noteboook", user_id: user.id)
+pen = Pen.new(title: 'Fountain pen', description: "A great fountain pen and a noteboook", user_id: user.id, price: 10, category: "blue-pen")
 pen.photo.attach(io: file, filename: 'pen01', content_type: 'image/jpg')
 
 pen.save!
 
 file = URI.open('https://res.cloudinary.com/dbflo5abx/image/upload/v1629282065/pen04_dds87j.jpg')
-pen = Pen.new(title: 'Fountain pen', description: "A great fountain pen and a noteboook", user_id: user.id)
+pen = Pen.new(title: 'Fountain pen', description: "A great fountain pen and a noteboook", user_id: user.id, price: 10, category: "blue-pen")
 pen.photo.attach(io: file, filename: 'pen01', content_type: 'image/jpg')
 
 pen.save!
 
 file = URI.open('https://res.cloudinary.com/dbflo5abx/image/upload/v1629282065/pen05_knf8sq.jpg')
-pen = Pen.new(title: 'Fountain pen', description: "A great fountain pen and a noteboook", user_id: user.id)
+pen = Pen.new(title: 'Fountain pen', description: "A great fountain pen and a noteboook", user_id: user.id, price: 10, category: "blue-pen")
 pen.photo.attach(io: file, filename: 'pen01', content_type: 'image/jpg')
 
 pen.save!

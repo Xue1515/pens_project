@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300;1,400;1,700;1,900&display=swap');
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-product {
+  overflow: hidden;
+  height: 200px;
+  background: #F3E5DF;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.card-product img {
+  height: 100%;
+  width: 200px;
+  background: transparent no-repeat center;
+}
+.card-product h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  color: #5a6268;
+}
+.card-product p {
+  font-family: 'Merriweather', serif;
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+  display: flex;
+  align-items: flex-end;
+  color: #5a6268;
+}
+.card-product .card-product-infos {
+  padding: 25px;
+}
+.boton-delete{
+  margin-top: 10px;
+}
