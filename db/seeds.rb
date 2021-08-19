@@ -18,6 +18,18 @@ user.photo.attach(io: file, filename: 'sue', content_type: 'image/png')
 
 user.save!
 
+file = URI.open('https://avatars.githubusercontent.com/u/68551131?v=4')
+user = User.new(email: 'pablo@pablo.com', password: "123456")
+user.photo.attach(io: file, filename: 'pablo', content_type: 'image/png')
+
+user.save!
+
+file = URI.open('https://avatars.githubusercontent.com/u/4697576?v=4')
+user = User.new(email: 'and@and.com', password: "123456")
+user.photo.attach(io: file, filename: 'and', content_type: 'image/png')
+
+user.save!
+
 file = URI.open('https://res.cloudinary.com/dbflo5abx/image/upload/v1629282065/pen01_f6922x.jpg')
 pen = Pen.new(title: 'Hester Dorsey Richardson', description: "The fountain pen was available in Europe in the 17th century and is shown by contemporary references.", user_id: user.id, price: 10, category: "Classic")
 pen.photo.attach(io: file, filename: 'pen01', content_type: 'image/jpg')
