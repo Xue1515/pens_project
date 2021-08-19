@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300;1,400;1,700;1,900&display=swap');
+
+.footer-basic {
+  background-color: #3d3d3d;
+  padding: 35px;
+}
+
+.list-inline-item,
+.list-inline-item a {
+  font-family: 'Merriweather', serif;
+  color: hsl(0, 0%, 85%) !important;
+  line-height: 1em;
+  padding: 0 15px 0 0;
+  font-weight: 500;
+}

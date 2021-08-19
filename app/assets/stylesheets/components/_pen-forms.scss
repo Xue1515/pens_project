@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  background-color: #f7dfd5;
+  font-family: 'Merriweather', serif;
+}
+
+.pen-form-container {
+  display: block;
+}
+
+.pen-form-card {
+  margin: 60px auto;
+  max-width: 350px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 9.5px 16.3px -22px rgba(0, 0, 0, 0.011), 0 15.1px 22px -22px rgba(0, 0, 0, 0.016), 0 18.4px 26.4px -22px rgba(0, 0, 0, 0.02), 0 21.6px 32.1px -22px rgba(0, 0, 0, 0.024), 0 30.3px 42.8px -22px rgba(0, 0, 0, 0.029), 0 100px 80px -22px rgba(0, 0, 0, 0.04);
+}
+
+
+.pen-form-title {
+
+}
+
+.pen-form-description {
+
+}
+
+.pen-form-upload {
+
+}
+
+.pen-form-button {
+
+}
+
+.pen-form-button a {
+  color: #fff;
+  padding: 12px 20px;
+  background-color:  hsl(138, 79%, 56%);;
+}
+
+
+.pen-form-cancel,
+.pen-form-cancel a {
+  text-align: right;
+  color: hsl(0, 0%, 38%);
+}
