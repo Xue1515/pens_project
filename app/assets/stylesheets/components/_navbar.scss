@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300;1,400;1,700;1,900&display=swap');
+
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
@@ -9,4 +11,39 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.pen-nav-link,
+.pen-nav-link a {
+  font-family: 'Merriweather', serif;
+  color: hsl(0, 0%, 35%);
+  line-height: 1em;
+  padding: 0 15px 0 0;
+  font-weight: 500;
+}
+
+.pen-nav-link:hover,
+.pen-nav-link a:hover {
+  color: hsl(0, 0%, 13%);
+  text-decoration: none;
+}
+
+.pen-nav-icon {
+  border-radius: 50;
+}
+
+.pen-nav-menu {
+  align-items: center;
+}
+
+.pen-nav-item {
+
+}
+
+
+.nav-brand-name {
+  font-family: 'Merriweather', serif;
+  color: hsl(0, 0%, 13%);
+  font-weight: 500;
+  font-size: 22px;
 }
