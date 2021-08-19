@@ -14,7 +14,8 @@
 }
 
 .pen-nav-link,
-.pen-nav-link a {
+.pen-nav-link a,
+.dropdown-item {
   font-family: 'Merriweather', serif;
   color: hsl(0, 0%, 35%);
   line-height: 1em;
@@ -23,7 +24,21 @@
 }
 
 .pen-nav-link:hover,
-.pen-nav-link a:hover {
+.pen-nav-link a:hover,
+.dropdown-item:hover {
+  color: hsl(0, 0%, 13%);
+  text-decoration: none;
+}
+
+.dropdown-item {
+  font-family: 'Merriweather', serif;
+  color: hsl(0, 0%, 35%);
+  line-height: 1em;
+  padding: 10px 0 10px 15px;
+  font-weight: 500;
+}
+
+.dropdown-item:hover {
   color: hsl(0, 0%, 13%);
   text-decoration: none;
 }
