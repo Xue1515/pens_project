@@ -34,3 +34,16 @@ body {
 .pen-form-button {
 
 }
+
+.pen-form-button a {
+  color: #fff;
+  padding: 12px 20px;
+  background-color:  hsl(138, 79%, 56%);;
+}
+
+
+.pen-form-cancel,
+.pen-form-cancel a {
+  text-align: right;
+  color: hsl(0, 0%, 38%);
+}
