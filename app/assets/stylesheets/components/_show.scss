@@ -36,9 +36,9 @@
   margin: 0;
   display: flex;
   align-items: flex-end;
-  color: #5a6268;
+  color: #3D3D3D;
 }
-.card-product p {
+.card-product p{
   font-family: 'Merriweather', serif;
   font-size: 12px;
   line-height: 1.4;
@@ -47,8 +47,10 @@
   margin-top: 8px;
   display: flex;
   align-items: flex-end;
-  color: #5a6268;
+  color:#3D3D3D;
 }
+
+.card-product-infos
 .card-product .card-product-infos {
   padding: 25px;
 }
