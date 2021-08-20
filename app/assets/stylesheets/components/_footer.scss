@@ -5,6 +5,11 @@
   padding: 35px;
 }
 
+.pen-footer-container {
+  display: flex;
+  justify-content: center;
+}
+
 .list-inline-item,
 .list-inline-item a {
   font-family: 'Merriweather', serif;
@@ -12,4 +17,12 @@
   line-height: 1em;
   padding: 0 15px 0 0;
   font-weight: 500;
+}
+
+.pen-footer-social {
+  margin: 0 auto;
+}
+
+.pen-footer-menu {
+  margin: 0 auto;
 }
