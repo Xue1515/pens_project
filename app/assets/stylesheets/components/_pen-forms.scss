@@ -7,6 +7,21 @@ body {
 
 .pen-form-container {
   display: block;
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(https://res.cloudinary.com/dbflo5abx/image/upload/v1629389678/vyadg19uca9tpe8z4j7zuk8md6qb.jpg);
+}
+
+.pen-form-page-head {
+  font-family: 'Merriweather', serif;
+  font-size: 60px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 75px;
 }
 
 .pen-form-card {
@@ -17,7 +32,6 @@ body {
   border-radius: 10px;
   box-shadow: 0 9.5px 16.3px -22px rgba(0, 0, 0, 0.011), 0 15.1px 22px -22px rgba(0, 0, 0, 0.016), 0 18.4px 26.4px -22px rgba(0, 0, 0, 0.02), 0 21.6px 32.1px -22px rgba(0, 0, 0, 0.024), 0 30.3px 42.8px -22px rgba(0, 0, 0, 0.029), 0 100px 80px -22px rgba(0, 0, 0, 0.04);
 }
-
 
 .pen-form-title {
 
@@ -31,7 +45,30 @@ body {
 
 }
 
-.pen-form-button {
+.pen_photo {
+  color: hsl(0, 0%, 17%);
+  font-size: 17px;
+  padding: 12px 20px;
+  background-color: #fff;
+  border: 1px solid hsl(210, 14%, 83%);
+  border-radius: 2px;
+  margin: 10px 0;
+}
+
+.pen-form-button .btn {
+  color: hsl(0, 0%, 38%);
+  font-size: 17px;
+  font-weight: 600;
+  padding: 12px 20px;
+  background-color: hsl(147, 81%, 58%);
+  border-radius: 10px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.pen-form-button .btn:hover {
+  color: hsl(0, 0%, 20%);
+  background-color: hsl(147, 81%, 45%);
 
 }
 

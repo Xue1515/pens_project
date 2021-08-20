@@ -1,4 +1,5 @@
 <div class="pen-form-container">
+
   <div class="pen-form-card">
     <%= simple_form_for(@pen) do |f| %>
       <div class="pen-form-title">
@@ -7,7 +8,7 @@
       <div class="pen-form-description">
         <%= f.input :description%>
       </div>
-      <div class="pen-form-title">
+      <div class="pen-form-price">
         <%= f.input :price %>
       </div>
       <div class="pen-form-upload">
@@ -17,6 +18,6 @@
         <%= f.button :submit, class: "pen-form-button" %>
       </div>
     <% end %>
-  <%= link_to "Back to all pens", root_path, class: 'pen-form-cancel' %>
+  <%= link_to "Cancel", root_path, class: 'pen-form-cancel' %>
   </div>
 </div>
