@@ -48,12 +48,6 @@ pen.photo.attach(io: file, filename: 'pen03', content_type: 'image/jpg')
 
 pen.save!
 
-file = URI.open('https://res.cloudinary.com/dbflo5abx/image/upload/v1629304930/m5ap33ctgcycri3vqniugszslsyn.jpg')
-pen = Pen.new(title: 'Fountain pen', description: "A great fountain pen and a noteboook", user_id: user.id, price: 10, category: "Classic")
-pen.photo.attach(io: file, filename: 'pen04', content_type: 'image/jpg')
-
-pen.save!
-
 file = URI.open('https://res.cloudinary.com/dbflo5abx/image/upload/v1629304933/pstq4coaxnz6lzx18hy35hzi60s6.jpg')
 pen = Pen.new(title: 'Azel Storrs Lyman ', description: "Only after three key inventions were in place that the fountain pen became a widely popular writing instrument. ", user_id: user.id, price: 10, category: "Original")
 pen.photo.attach(io: file, filename: 'pen05', content_type: 'image/jpg')
@@ -87,12 +81,6 @@ pen.save!
 file = URI.open('https://res.cloudinary.com/dbflo5abx/image/upload/v1629383250/every-angle-emQqWt7goEY-unsplash_pucin4.jpg')
 pen = Pen.new(title: 'Parker Jointless', description: "George Safford Parker released the Parker Jointless, named so because its barrel was single-piece to prevent leakage. The section assembly fit into the pen's end like a cork stopper; any leaked ink was kept inside the nib.", user_id: user.id, price: 10, category: "Classic")
 pen.photo.attach(io: file, filename: 'pen10', content_type: 'image/jpg')
-
-pen.save!
-
-file = URI.open('https://res.cloudinary.com/dbflo5abx/image/upload/v1629282065/pen05_knf8sq.jpg')
-pen = Pen.new(title: 'Waterman', description: "For pens with non-retractable nibs, the adoption of screw-on caps with inner caps that sealed around the nib by bearing against the front of the section effectively solved the leakage problem.", user_id: user.id, price: 10, category: "Original")
-pen.photo.attach(io: file, filename: 'pen11', content_type: 'image/jpg')
 
 pen.save!
 
