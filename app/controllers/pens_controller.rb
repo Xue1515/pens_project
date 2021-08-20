@@ -45,6 +45,6 @@ class PensController < ApplicationController
   private
 
    def pen_params
-    params.require(:pen).permit(:title, :description, :photo)
+    params.require(:pen).permit(:title, :description, :price, :photo)
    end
 end
