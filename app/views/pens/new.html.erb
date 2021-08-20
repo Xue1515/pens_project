@@ -11,10 +11,9 @@
         <%= f.input :photo, as: :file %>
       </div>
       <div class="pen-form-button">
-        <%= f.button :submit %>
+        <%= f.button :submit class :pen-form-button %>
       </div>
     <% end %>
+  <%= link_to "Back to all pens", root_path, class: 'pen-form-cancel' %>
   </div>
 </div>
-
-  <%= link_to "Back to all pens", root_path, class: 'pen-form-btn-01' %>

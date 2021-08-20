@@ -12,7 +12,7 @@
         <%= link_to pen.title, pen_path(pen) %>
       </div>
       <div class="pen-card-detail">
-        <%= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, exercitationem." %>
+       <%= pen.description[0, 80] ... %>
       </div>
         <% end %>
       </div>
