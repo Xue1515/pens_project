@@ -1,20 +1,23 @@
 <div class="pen-form-container">
-  <h1 class="pen-form-page-head">Add a new pen</h1>
-    <div class="pen-form-card">
-      <%= simple_form_for(@pen) do |f| %>
-        <div class="pen-form-title">
-          <%= f.input :title %>
-        </div>
-        <div class="pen-form-description">
-          <%= f.input :description%>
-        </div>
-        <div class="pen-form-upload">
-          <%= f.input :photo, as: :file %>
-        </div>
-        <div class="pen-form-button">
-          <%= f.button :submit %>
-        </div>
-      <% end %>
-    <%= link_to "Cancel", root_path, class: 'pen-form-cancel' %>
-    </div>
+
+  <div class="pen-form-card">
+    <%= simple_form_for(@pen) do |f| %>
+      <div class="pen-form-title">
+        <%= f.input :title %>
+      </div>
+      <div class="pen-form-description">
+        <%= f.input :description%>
+      </div>
+      <div class="pen-form-price">
+        <%= f.input :price %>
+      </div>
+      <div class="pen-form-upload">
+        <%= f.input :photo, as: :file %>
+      </div>
+      <div class="pen-form-button">
+        <%= f.button :submit, class: "pen-form-button" %>
+      </div>
+    <% end %>
+  <%= link_to "Cancel", root_path, class: 'pen-form-cancel' %>
+  </div>
 </div>
