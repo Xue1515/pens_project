@@ -19,7 +19,7 @@ class BookingsController < ApplicationController
     @pen = Pen.find(params[:pen_id])
     @booking.pen = @pen
       if @booking.save!
-        redirect_to root_path
+        redirect_to root_path, notice: "You have successfully rented a pen!"
       else
       render :new
       end
