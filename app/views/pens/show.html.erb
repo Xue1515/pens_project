@@ -10,7 +10,7 @@
     <div class="card-product-infos">
       <h1><%= @pen.title %></h1>
       <h2><%= @pen.description %></h2>
-      <h4><%= @pen.category %></h4>
+      <h5><%= @pen.category %></h5>
       <h6><%= @pen.price %>$</h6>
       <%= link_to "delete pen", pen_path(@pen), method: :delete, class: 'btn btn-secondary boton-delete'%>
     </div>
@@ -18,11 +18,13 @@
 </div>
 
 <div class="container" style="margin: 0 auto;">
+  <div class="form">
     <h2>Booking a Pen</h2>
 
-  <%= simple_form_for (@pen, @booking) do |f| %>
-    <%= f.input :starts_at, as: :string, required: false, input_html: {class: "datepicker"} %>
-    <%= f.input :ends_at, as: :string, required: false, input_html: {class: "datepicker"} %>
-    <%= f.button :submit, "Go", class: "btn btn-secondary" %>
-  <% end %>
+    <%= simple_form_for :search, method: "get" do |f| %>
+      <%= f.input :starts_at, as: :string, required: false, input_html: {class: "datepicker"} %>
+      <%= f.input :ends_at, as: :string, required: false, input_html: {class: "datepicker"} %>
+      <%= f.button :submit, "Go", class: "btn btn-secondary" %>
+    <% end %>
+  </div>
 </div>
