@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 24px;
+  font-size: 25px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
@@ -17,16 +17,16 @@
 
 .card-product {
   overflow: hidden;
-  height: 200px;
+  height: 40vh;
   background: #F3E5DF;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 .card-product img {
   height: 100%;
-  width: 200px;
+  width: 280px;
   background: transparent no-repeat center;
 }
 .card-product h2 {
@@ -40,7 +40,7 @@
 }
 .card-product p {
   font-family: 'Merriweather', serif;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
@@ -53,6 +53,17 @@
   padding: 25px;
   color: #3D3D3D;
 }
+
 .boton-delete{
   margin-top: 10px;
+}
+
+.form{
+  margin-top: 60px;
+  margin-bottom: 60px;;
+}
+
+.form h2{
+ color: #3D3D3D;
+ text-align: center;
 }
